@@ -1,0 +1,7 @@
+1
+9
+.tran 0.1 10{return}{return}
+1
+1
+Net-(C1-Pad1)
+V
