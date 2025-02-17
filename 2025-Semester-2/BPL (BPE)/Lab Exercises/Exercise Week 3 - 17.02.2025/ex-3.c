@@ -5,14 +5,13 @@
 #include <stdio.h>
 
 int main() {
-  int a, b;
+  int a;
 
   scanf("%d", &a);
-  scanf("%d", &b);
 
-  int sum = a + b;
+  int isEven = a % 2 == 0;
 
-  printf("Sum: %d\n", sum);
+  printf(isEven ? "Even" : "Odd");
 
   return 0;
 }

@@ -11,8 +11,11 @@ int main() {
   scanf("%d", &b);
 
   int sum = a + b;
+  int diff = a - b;
+  int prod = a * b;
+  int div = a / b;
 
-  printf("Sum: %d\n", sum);
+  printf("Sum: %d\nDiff: %d\nProd: %d\nQuot: %d", sum, diff, prod, div);
 
   return 0;
 }
