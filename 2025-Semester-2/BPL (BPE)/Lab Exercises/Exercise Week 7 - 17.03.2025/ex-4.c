@@ -14,9 +14,8 @@ int str_len(char str[]) {
 
 int str_compare(char str1[], char str2[]) {
   int result;
-int i=0;
-  int str1_len = str_len(str1);
-  int str2_len = str_len(str2);
+  int i = 0;
+
   while (str1[i]!='\0' && str2[i]!='\0') {
     if (str1[i] > str2[i]) {
       result = 1;
@@ -34,52 +33,6 @@ int i=0;
     result = -1;
   } else {
     result = 1;
-  }
-
-  if (str1_len > str2_len) {
-    for (int i = 0; i < str1_len; i++) {
-      if (str2[i]) {
-        if (str1[i] > str2[i]) {
-          result = 1;
-          break;
-        } else if (str1[i] < str2[i]) {
-          result = -1;
-          break;
-        }
-      } else {
-        result = 1;
-        break;
-      }
-    }
-  }
-  else if (str1_len < str2_len) {
-    for (int i = 0; i < str2_len; i++) {
-      if (str1[i]) {
-        if (str1[i] > str2[i]) {
-          result = 1;
-          break;
-        } else if (str1[i] < str2[i]) {
-          result = -1;
-          break;
-        }
-      } else {
-        result = -1;
-        break;
-      }
-    }
-  }
-  else {
-    for (int i = 0; i < str1_len; i++) {
-      if (str1[i] > str2[i]) {
-        result = 1;
-        break;
-      } else if (str1[i] < str2[i]) {
-        result = -1;
-        break;
-      } else {
-        result = 0;
-      }
-    }
   }
 
   return result;
